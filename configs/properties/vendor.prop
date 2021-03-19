@@ -146,6 +146,9 @@ ro.vendor.mediatek.version.release=alps-mp-s0.mp1.rc-V15.102_reallytek.s0mp1rc.k
 # Misc
 ro.vendor.mtk_gwsd_capability=1
 
+# MTE
+arm64.memtag.process.system_server=off
+
 # Neural Networks
 debug.mtk_tflite.target_nnapi=29
 ro.vendor.mtk_nn.option=A,B,C,D,E,F,G,Z
