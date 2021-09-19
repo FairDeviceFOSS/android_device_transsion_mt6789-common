@@ -1115,6 +1115,6 @@ on property:sys.boot_completed=1
     write /dev/cpuctl/rt/cpu.shares 20480
     write /dev/cpuctl/top-app/cpu.shares 20480
 
-# Report max frequency to unity tasks
-    write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so"
+# Report max frequency to unity and miHoYo (HoYoverse) games tasks
+    write /proc/sys/kernel/sched_lib_name "com.miHoYo.,com.HoYoverse.,UnityMain,libunity.so"
     write /proc/sys/kernel/sched_lib_mask_force 255
