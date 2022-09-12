@@ -82,5 +82,8 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/mediatek \
     hardware/transsion
 
+# Updatable APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # Inherit from the proprietary files makefile.
 $(call inherit-product, vendor/transsion/mt6789-common/mt6789-common-vendor.mk)
