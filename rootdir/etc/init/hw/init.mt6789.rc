@@ -52,6 +52,12 @@ mkdir /tranfs 0771 system system
     write /dev/cpuset/system-background/cpus 0-3
     write /dev/cpuset/top-app/cpus 0-7
 
+   # Setup runtime blkio
+    write /dev/blkio/blkio.weight 1000
+    write /dev/blkio/background/blkio.weight 200
+    write /dev/blkio/blkio.group_idle 2000
+    write /dev/blkio/background/blkio.group_idle 0
+
 on late-init
     write /proc/bootprof "INIT:late-init"
 # enable rcu_expedited
