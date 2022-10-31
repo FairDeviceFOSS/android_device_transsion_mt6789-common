@@ -287,6 +287,10 @@ PRODUCT_PACKAGES += \
     SystemUIResCommon \
     TelephonyResCommon
 
+# Lineage-Specific Overlays
+PRODUCT_PACKAGES += \
+	ApertureOverlay
+    
 # Permissions
 PRODUCT_COPY_FILES += \
 # Permissions
