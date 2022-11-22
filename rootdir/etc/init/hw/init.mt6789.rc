@@ -765,6 +765,9 @@ on early-boot
     verity_update_state
 
 on boot
+    # start EAS+
+    write /sys/devices/system/cpu/eas/enable 1
+    
     write /proc/bootprof "INIT:boot"
 
     write /proc/sys/vm/dirty_writeback_centisecs 300
