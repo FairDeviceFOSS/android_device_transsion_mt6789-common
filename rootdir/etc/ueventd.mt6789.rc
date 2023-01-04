@@ -59,8 +59,7 @@
 /dev/fw_log_wifi          0660   wifi     wifi
 
 # FMRadio
-# NFBD:modify  for dev/fm 0660->0666 by yuguo.zhang 20220406
-/dev/fm                   0666   media     media
+/dev/fm                   0660   system     system
 
 # NFC
 /dev/st21nfc              0660   nfc        radio
