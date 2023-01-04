@@ -199,6 +199,9 @@ vendor/etc/init/fuelgauged_nvram_init.rc
 vendor/lib/libfgauge_gm30.so
 vendor/lib64/libfgauge_gm30.so
 
+# FM Radio
+-system_ext/lib64/libfmjni.so:system/lib64/libfmjni.so
+
 # Gatekeeper
 vendor/lib/hw/libMcGatekeeper.so
 vendor/lib/libMcClient.so
