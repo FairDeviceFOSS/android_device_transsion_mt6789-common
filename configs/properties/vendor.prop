@@ -24,6 +24,7 @@ vendor.connsys.driver.ready=no
 ro.vendor.mtk_tee_gp_support=1
 
 # Graphics
+debug.sf.disable_client_composition_cache=1
 debug.renderengine.backend=skiagl
 debug.sf.disable_backpressure=1
 debug.sf.late.sf.duration=29100000
