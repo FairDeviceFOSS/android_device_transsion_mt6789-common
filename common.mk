@@ -6,6 +6,9 @@
 
 COMMON_PATH := device/transsion/mt6789-common
 
+# Dynamic partitions
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
