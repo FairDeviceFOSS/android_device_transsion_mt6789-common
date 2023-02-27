@@ -74,5 +74,11 @@ BOARD_HAS_MTK_HARDWARE := true
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/configs/properties/system.prop
 TARGET_VENDOR_PROP += $(COMMON_PATH)/configs/properties/vendor.prop
 
+# Recovery
+BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.mt6789
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+TARGET_USERIMAGES_USE_F2FS := true
+
 # Inherit proprietary blobs
 include vendor/transsion/mt6789-common/BoardConfigVendor.mk
