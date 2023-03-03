@@ -118,6 +118,12 @@ function blob_fixup() {
         vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc)
             sed -i 's/start/enable/' "$2"
             ;;
+        vendor/lib*/libspeech_enh_lib.so|\
+        vendor/lib64/libwifi-hal-mtk.so|\
+        vendor/lib*/hw/sound_trigger.primary.mt6789.so|\
+        vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so)
+            "${PATCHELF}" --set-soname "$(basename "${1}")" "${2}"
+            ;;
     esac
 }
 
