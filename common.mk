@@ -63,6 +63,9 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-impl.recovery
 
+# Include GSI keys
+$(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
+
 # Init files
 PRODUCT_PACKAGES += \
 	fstab.mt6789_vendor_ramdisk
