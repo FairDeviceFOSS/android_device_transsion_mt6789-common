@@ -94,8 +94,9 @@ TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 
 # Platform
-TARGET_BOARD_PLATFORM := mt6789
+TARGET_BOARD_PLATFORM := mt6789 
 BOARD_HAS_MTK_HARDWARE := true
+BOARD_HAVE_MTK_FM := true
 
 # Properties
 TARGET_SYSTEM_PROP += $(COMMON_PATH)/configs/properties/system.prop
