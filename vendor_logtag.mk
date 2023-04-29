@@ -181,6 +181,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.log.tag.RfxTimer=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.RfxObject=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.SlotQueueEntry=$(VENDOR_LOG_LEVEL) \
+    persist.log.tag.SpeechMessengerNormal=$(VENDOR_LOG_LEVEL_I) \
     persist.log.tag.RfxAction=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.RFX=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.PhoneFactory=$(VENDOR_LOG_LEVEL) \
