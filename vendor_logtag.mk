@@ -206,6 +206,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.log.tag.MtkUsimFH=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.MtkSubCtrl=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.MtkEmbmsAdaptor=$(VENDOR_LOG_LEVEL) \
+    persist.log.tag.mtk_pdc_check_charger=$(VENDOR_LOG_LEVEL_I) \
     persist.log.tag.RilClient=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.RfxRilAdapter=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.MTKSST=$(VENDOR_LOG_LEVEL) \
