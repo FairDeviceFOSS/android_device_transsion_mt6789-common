@@ -1102,3 +1102,15 @@ on property:sys.boot_completed=1
     write /proc/sys/vm/watermark_scale_factor 200
     setprop vendor.tran.cur_max_process 72
 #SPD: add for watermark_scale_factor at 20230302 end
+
+on property:sys.boot_completed=1
+# Setup cpu.shares to throttle background groups (bg ~ 5% sysbg ~ 10%)
+    write /dev/cpuctl/background/cpu.shares 1024
+    write /dev/cpuctl/system-background/cpu.shares 2048
+    write /dev/cpuctl/system/cpu.shares 20480
+    # We only have system and background groups holding tasks and the groups below are empty
+    write /dev/cpuctl/camera-daemon/cpu.shares 20480
+    write /dev/cpuctl/foreground/cpu.shares 20480
+    write /dev/cpuctl/nnapi-hal/cpu.shares 20480
+    write /dev/cpuctl/rt/cpu.shares 20480
+    write /dev/cpuctl/top-app/cpu.shares 20480
