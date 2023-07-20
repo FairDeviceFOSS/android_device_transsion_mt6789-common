@@ -1,5 +1,9 @@
 ## X6833B package version: X6833B-H894DEFGHI-T-GL-240416V3866, unless stated otherwise
 
+# AEE
+vendor/lib/libaedv.so
+vendor/lib64/libaedv.so
+
 # Audio
 vendor/bin/audiocmdservice_atci
 vendor/etc/init/audiocmdservice_atci.rc
