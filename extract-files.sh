@@ -59,8 +59,11 @@ if [ -z "${SRC}" ]; then
 fi
 
 function blob_fixup() {
-    # case "${1}" in
-    # esac
+    case "$1" in
+        vendor/lib*/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so)
+            "$PATCHELF" --replace-needed "libutils.so" "libutils-v32.so" "$2"
+            ;;
+    esac
 }
 
 if [ -z "${ONLY_TARGET}" ]; then
