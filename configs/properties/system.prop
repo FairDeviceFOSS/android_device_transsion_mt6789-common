@@ -17,6 +17,9 @@ bluetooth.profile.sap.server.enabled=true
 # Charger
 ro.charger.enable_suspend=true
 
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+
 # Graphics
 debug.hwui.skia_atrace_enabled=false
 debug.sf.enable_transaction_tracing=false
