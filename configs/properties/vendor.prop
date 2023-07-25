@@ -19,6 +19,9 @@ ro.vendor.connsys.dedicated.log=1
 ro.vendor.connsys.dedicated.log.port=bt,wifi,gps,mcu
 vendor.connsys.driver.ready=no
 
+# DRM
+ro.vendor.mtk_tee_gp_support=1
+
 # Graphics
 debug.renderengine.backend=skiagl
 debug.sf.disable_backpressure=1
