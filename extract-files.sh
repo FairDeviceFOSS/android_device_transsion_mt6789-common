@@ -112,6 +112,9 @@ function blob_fixup() {
         vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so)
             "$PATCHELF" --replace-needed "libhidlbase.so" "libhidlbase_shim.so" "$2"
             ;;
+        vendor/etc/init/android.hardware.neuralnetworks-shim-service-mtk.rc)
+            sed -i 's/start/enable/' "$2"
+            ;;
     esac
 }
 
