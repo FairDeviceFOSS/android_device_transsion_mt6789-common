@@ -1,0 +1,6 @@
+[
+  {
+    "repository": "roms-experimental/hardware_transsion",
+    "target_path": "hardware/transsion"
+  }
+]
