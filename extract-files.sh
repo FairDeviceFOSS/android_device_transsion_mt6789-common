@@ -72,6 +72,12 @@ function blob_fixup() {
             "$PATCHELF" --replace-needed "libbinder.so" "libbinder-v32.so" "$2"
             "$PATCHELF" --replace-needed "libutils.so" "libutils-v32.so" "$2"
             ;;
+        vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so|\
+        vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so|\
+        vendor/lib64/mt6789/libaalservice.so|\
+        vendor/lib64/mt6789/libcam.utils.sensorprovider.so)
+            "${PATCHELF}" --add-needed "libshim_sensors.so" "${2}"
+            ;;
         vendor/bin/hw/android.hardware.security.keymint-service.trustonic)
             "${PATCHELF}" --replace-needed "android.hardware.security.keymint-V1-ndk_platform.so" "android.hardware.security.keymint-V1-ndk.so" "${2}"
             "${PATCHELF}" --replace-needed "android.hardware.security.secureclock-V1-ndk_platform.so" "android.hardware.security.secureclock-V1-ndk.so" "${2}"
