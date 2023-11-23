@@ -1,4 +1,5 @@
 # Audio
+ro.config.vc_call_vol_steps=11
 aaudio.mmap_exclusive_policy=2
 aaudio.mmap_policy=2
 persist.vendor.rm.debug.headsetmic=1
