@@ -1,0 +1,6 @@
+# Graphics
+debug.hwui.skia_atrace_enabled=false
+debug.sf.enable_transaction_tracing=false
+debug.sf.latch_unsignaled=true
+debug.sf.predict_hwc_composition_strategy=0
+debug.sf.use_phase_offsets_as_durations=1
