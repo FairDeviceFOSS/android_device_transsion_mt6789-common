@@ -48,6 +48,9 @@ vendor.debug.sf.cpupolicy.upbound_uclamp_min=350
 vendor.debug.sf.cpupolicy.upbound_uclamp_ret_sys=210
 vendor.debug.sf.cpupolicy.xgf_min=25
 
+# Power
+ro.vendor.powerhal_fling_mode_support=1
+
 # PQ
 ro.vendor.mtk_pq_color_mode=1
 ro.vendor.mtk_pq_support=2
