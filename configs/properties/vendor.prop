@@ -57,6 +57,10 @@ vendor.debug.sf.cpupolicy.xgf_min=25
 # Gatekeeper
 ro.hardware.gatekeeper=trustonic
 
+# Keymaster
+ro.crypto.volume.filenames_mode=aes-256-cts
+ro.hardware.kmsetkey=trustonic
+
 # Power
 ro.vendor.powerhal_fling_mode_support=1
 
