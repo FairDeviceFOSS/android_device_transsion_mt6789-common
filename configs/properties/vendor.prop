@@ -54,6 +54,9 @@ vendor.debug.sf.cpupolicy.upbound_uclamp_min=350
 vendor.debug.sf.cpupolicy.upbound_uclamp_ret_sys=210
 vendor.debug.sf.cpupolicy.xgf_min=25
 
+# Gatekeeper
+ro.hardware.gatekeeper=trustonic
+
 # Power
 ro.vendor.powerhal_fling_mode_support=1
 
