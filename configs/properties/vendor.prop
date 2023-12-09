@@ -103,6 +103,9 @@ ro.vendor.pq.mtk_ultra_dimming_support=0
 ro.vendor.pq.mtk_ultra_resolution_support=0
 ro.vendor.pq.mtk_video_transition=0
 
+# Sensors
+ro.vendor.mtk.sensor.support=yes
+
 # TEE
 ro.vendor.mtk_svp_on_mtee_support=2
 ro.vendor.mtk_trustonic_tee_support=1
