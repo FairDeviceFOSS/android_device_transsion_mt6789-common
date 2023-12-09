@@ -4,6 +4,14 @@ aaudio.mmap_policy=2
 persist.vendor.rm.debug.headsetmic=1
 persist.vendor.rm.debug.phonemic=1
 
+# Connsys
+persist.vendor.connsys.chipid=-1
+persist.vendor.connsys.dynamic.dump=0
+persist.vendor.connsys.patch.version=-1
+ro.vendor.connsys.dedicated.log=1
+ro.vendor.connsys.dedicated.log.port=bt,wifi,gps,mcu
+vendor.connsys.driver.ready=no
+
 # Graphics
 debug.renderengine.backend=skiagl
 debug.sf.disable_backpressure=1
@@ -98,3 +106,9 @@ ro.vendor.pq.mtk_video_transition=0
 # TEE
 ro.vendor.mtk_svp_on_mtee_support=2
 ro.vendor.mtk_trustonic_tee_support=1
+
+# Wi-Fi
+ro.vendor.wifi.sap.concurrent.iface=ap1
+ro.vendor.wifi.sap.interface=ap0
+ro.vendor.wlan.chrdev=wmt_chrdev_wifi
+ro.vendor.wlan.gen=gen4m_6789
