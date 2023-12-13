@@ -180,6 +180,9 @@ ro.vendor.mtk.sensor.support=yes
 ro.vendor.mtk_svp_on_mtee_support=2
 ro.vendor.mtk_trustonic_tee_support=1
 
+# Thermal
+ro.vendor.mtk_thermal_2_0=1
+
 # Wi-Fi
 ro.vendor.wifi.sap.concurrent.iface=ap1
 ro.vendor.wifi.sap.interface=ap0
