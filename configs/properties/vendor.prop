@@ -161,6 +161,7 @@ persist.vendor.pnpmgr.enable=1
 persist.vendor.pnpmgr.gamemode.enable=1
 persist.vendor.pnpmgr.gamerecord.enable=1
 ro.vendor.transched.support=1
+ro.vendor.perf.scroll_opt=true
 ro.vendor.powerhal.gsi_watermark=500
 ro.vendor.powerhal_fling_mode_support=1
 
