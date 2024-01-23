@@ -1,3 +1,6 @@
+# APK Verity
+ro.apk_verity.mode=2
+
 # Audio
 ro.config.vc_call_vol_steps=11
 aaudio.mmap_exclusive_policy=2
