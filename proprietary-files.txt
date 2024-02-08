@@ -889,6 +889,10 @@ vendor/lib64/libhfmanager.so
 vendor/lib64/libhwm.so
 vendor/lib64/libksensor.so
 
+# Soundtrigger
+vendor/lib/hw/sound_trigger.primary.default.so
+vendor/lib64/hw/sound_trigger.primary.default.so
+
 # TEE
 vendor/app/mcRegistry/020f0000000000000000000000000000.drbin
 vendor/app/mcRegistry/020f0000000000000000000000000000.tlbin
