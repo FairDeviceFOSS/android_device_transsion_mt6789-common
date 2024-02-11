@@ -119,6 +119,11 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # SEPolicy
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
 
+# Touch
+SOONG_CONFIG_NAMESPACES += TRANSSION_TOUCH
+SOONG_CONFIG_TRANSSION_TOUCH := HIGH_TOUCH_POLLING_PATH
+SOONG_CONFIG_TRANSSION_TOUCH_HIGH_TOUCH_POLLING_PATH := /proc/game_state
+
 # Vendor Security Patch
 VENDOR_SECURITY_PATCH := 2024-04-05
 
@@ -149,7 +154,9 @@ BOARD_AVB_VBMETA_VENDOR_ROLLBACK_INDEX_LOCATION := 3
 BOARD_VNDK_VERSION := current
 
 # VINTF
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(COMMON_PATH)/configs/vintf/framework_compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+	$(COMMON_PATH)/configs/vintf/framework_compatibility_matrix.xml \
+	vendor/lineage/config/device_framework_matrix.xml
 DEVICE_MANIFEST_FILE := $(COMMON_PATH)/configs/vintf/manifest.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/configs/vintf/compatibility_matrix.xml
 

@@ -176,6 +176,7 @@ PRODUCT_PACKAGES += \
     init.project.rc \
     init.recovery.usb.rc \
     init.sensor_2_0.rc \
+    init.transsion.rc \
     ueventd.mt6789.rc
 
 # Keylayout
@@ -332,6 +333,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0.vendor
+
+# Touch
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.transsion
 
 # Updatable APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
