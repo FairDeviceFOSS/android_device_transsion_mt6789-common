@@ -342,9 +342,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.transsion
 
-# Updatable APEXes
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
-
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.3.vendor \
