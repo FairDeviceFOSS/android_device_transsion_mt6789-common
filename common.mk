@@ -80,9 +80,8 @@ PRODUCT_PACKAGES += \
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.2-service \
-    android.hardware.boot@1.2-impl:64 \
-    android.hardware.boot@1.2-impl.recovery
+    com.android.hardware.boot \
+    android.hardware.boot-service.default_recovery
 
 # Dalvik configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
