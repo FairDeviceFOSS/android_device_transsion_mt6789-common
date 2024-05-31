@@ -354,6 +354,7 @@ PRODUCT_PACKAGES += \
     libnetutils.vendor \
     libdumpstateutil.vendor \
     libpower.vendor \
+    libhidlbase_shim \
     libutilscallstack.vendor \
     libhidlmemory.vendor 
 
