@@ -64,8 +64,8 @@ function blob_fixup() {
         vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so)
             "${PATCHELF}" --replace-needed "android.hardware.gnss-V1-ndk_platform.so" "android.hardware.gnss-V1-ndk.so" "${2}"
             ;;
-        vendor/bin/hw/mt6789/camerahalserver |\
-        vendor/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so |\
+        vendor/bin/hw/mt6789/camerahalserver|\
+        vendor/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so|\
         vendor/lib*/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so|\
         vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service)
             "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
@@ -91,7 +91,11 @@ function blob_fixup() {
             "${PATCHELF}" --replace-needed "android.hardware.security.secureclock-V1-ndk_platform.so" "android.hardware.security.secureclock-V1-ndk.so" "${2}"
             "${PATCHELF}" --replace-needed "android.hardware.security.sharedsecret-V1-ndk_platform.so" "android.hardware.security.sharedsecret-V1-ndk.so" "${2}"
             grep -q "android.hardware.security.rkp-V3-ndk.so" "${2}" || ${PATCHELF} --add-needed "android.hardware.security.rkp-V3-ndk.so" "${2}"
-            ;;  
+            ;;
+        system_ext/bin/vtservice|\
+        system_ext/lib64/libsource.so)
+            grep -q libshim_ui.so "$2" || "${PATCHELF}" --add-needed libshim_ui.so "${2}}"
+            ;;
         system_ext/lib64/libsink.so)
             "${PATCHELF}" --add-needed "libshim_sink.so" "${2}"
             ;;
