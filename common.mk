@@ -308,6 +308,25 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.3.vendor \
     android.hardware.radio@1.6.vendor
 
+# Required libs QPR3
+PRODUCT_PACKAGES += \
+    libexpat.vendor \
+    libunwindstack.vendor \
+    libcurl.vendor \
+    libutilscallstack.vendor \
+    libexif.vendor \
+    liblz4.vendor \
+    libpng.vendor \
+    libion.vendor \
+    libui.vendor \
+    libgatekeeper.vendor \
+    libjsoncpp.vendor \
+    libnetutils.vendor \
+    libdumpstateutil.vendor \
+    libpower.vendor \
+    libutilscallstack.vendor \
+    libhidlmemory.vendor 
+
 # Secure Element
 PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor
@@ -356,7 +375,7 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     wpa_supplicant \
     hostapd \
-	libkeystore-wifi-hidl:64 \
+    libkeystore-wifi-hidl:64 \
     libkeystore-engine-wifi-hidl:64
     
 PRODUCT_PACKAGES += \
