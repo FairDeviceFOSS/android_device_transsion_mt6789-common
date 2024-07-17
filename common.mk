@@ -312,6 +312,7 @@ PRODUCT_PACKAGES += \
 
 # Required libs QPR3
 PRODUCT_PACKAGES += \
+    libshim_camera_metadata \
     libexpat.vendor \
     libunwindstack.vendor \
     libcurl.vendor \
