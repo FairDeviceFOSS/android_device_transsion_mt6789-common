@@ -1,0 +1,3 @@
+allow system_server sysfs_OTG_STATE_file:file { read write getattr open };
+
+get_prop(system_server, wifi_hal_prop)

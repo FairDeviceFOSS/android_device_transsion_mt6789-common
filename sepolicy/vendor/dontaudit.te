@@ -1,0 +1,9 @@
+dontaudit {
+    mobicore
+    mtk_hal_camera
+} shell_data_file:dir search;
+
+dontaudit ueventd tranfs_block_device:blk_file rw_file_perms;
+dontaudit audioserver vendor_audio_prop:file read;
+dontaudit stflashtool nfc_prop:file read;
+dontaudit hal_audio_default hal_power_hwservice:hwservice_manager find;

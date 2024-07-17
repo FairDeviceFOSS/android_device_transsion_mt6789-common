@@ -1,0 +1,5 @@
+allow init sysfs_devices_block:file rw_file_perms;
+allow init tranfs_block_device:blk_file { read relabelto };
+
+get_prop(init, vendor_mtk_service_nvram_restore_prop)
+get_prop(init, vts_status_prop)
