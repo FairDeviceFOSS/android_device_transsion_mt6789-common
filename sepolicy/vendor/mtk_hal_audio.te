@@ -1,0 +1,1 @@
+allow mtk_hal_audio sysfs:file { read getattr open };
