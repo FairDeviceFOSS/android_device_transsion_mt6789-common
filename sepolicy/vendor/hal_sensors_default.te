@@ -27,6 +27,8 @@ allow hal_sensors_default metadata_file:dir search;
 allow hal_sensors_default mnt_vendor_file:dir search;
 allow hal_sensors_default nvcfg_file:dir create_dir_perms;
 allow hal_sensors_default nvcfg_file:file create_file_perms;
+allow hal_sensors_default nvdata_file:dir { read search open };
+allow hal_sensors_default nvdata_file:file { read getattr open };
 allow hal_sensors_default sensor_data_file:dir create_dir_perms;
 allow hal_sensors_default sensor_data_file:dir search;
 allow hal_sensors_default sensor_data_file:file create_file_perms;
