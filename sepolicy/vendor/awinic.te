@@ -1,1 +1,0 @@
-allow mtk_hal_audio aw87xxx_vmax:file { read getattr open };
