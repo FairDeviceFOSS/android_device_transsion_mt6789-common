@@ -1,8 +1,5 @@
 # Audio
 vendor_internal_prop(vendor_audio_prop)
 
-# NVRAM
-vendor_restricted_prop(vendor_mtk_service_nvram_restore_prop)
-
 # NFC
 vendor_internal_prop(vendor_nfc_prop)
