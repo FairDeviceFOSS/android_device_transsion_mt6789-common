@@ -25,7 +25,7 @@ source "${HELPER}"
 setup_vendor "${DEVICE_COMMON}" "${VENDOR_COMMON:-$VENDOR}" "${ANDROID_ROOT}" true
 
 # Warning headers and guards
-write_headers "LH7n X6833B"
+write_headers "X6837 X6833B X676C"
 
 # The standard common blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" true
