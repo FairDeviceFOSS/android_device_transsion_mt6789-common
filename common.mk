@@ -317,7 +317,10 @@ PRODUCT_PACKAGES += \
     libcurl.vendor \
     libutilscallstack.vendor \
     libexif.vendor \
+    libdng_sdk.vendor \
     liblz4.vendor \
+    libpiex \
+    libexpat.vendor \
     libpng.vendor \
     libion.vendor \
     libui.vendor \
@@ -357,7 +360,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0.vendor
-    
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.3.vendor \
