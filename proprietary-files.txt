@@ -372,7 +372,7 @@ vendor/lib64/liboemcrypto.so
 vendor/lib64/libtlcWidevineModularDrm.so
 vendor/lib64/liburee_meta_drmkeyinstall.so
 vendor/lib64/libwvhidl.so
-
+     
 # Fuelgauge
 vendor/bin/fuelgauged
 vendor/bin/fuelgauged_nvram
