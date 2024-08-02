@@ -2,7 +2,7 @@
 
 ```
 #
-# Copyright (C) 2024 IrawansPrjkt
+# Copyright (C) 2024 LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
