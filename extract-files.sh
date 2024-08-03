@@ -96,8 +96,9 @@ function blob_fixup() {
         system_ext/lib64/libsource.so)
             grep -q libshim_ui.so "$2" || "${PATCHELF}" --add-needed libshim_ui.so "${2}"
             ;;
+        system_ext/bin/vtservice|\
         system_ext/lib64/libsink.so)
-            "${PATCHELF}" --add-needed "libshim_sink.so" "${2}"
+            grep -q libshim_sink.so "$2" || "${PATCHELF}" --add-needed libshim_sink.so "${2}"
             ;;
         vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so)
             "$PATCHELF" --replace-needed "libhidlbase.so" "libhidlbase_shim.so" "$2"
