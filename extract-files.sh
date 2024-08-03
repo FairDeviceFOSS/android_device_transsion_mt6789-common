@@ -67,6 +67,8 @@ function blob_fixup() {
         vendor/bin/hw/mt6789/camerahalserver|\
         vendor/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so|\
         vendor/lib*/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so|\
+        vendor/bin/hw/android.hardware.thermal@2.0-service.mtk|\
+        vendor/lib*/hw/android.hardware.thermal@2.0-impl.so|\
         vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service)
             "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
             "${PATCHELF}" --replace-needed "libbinder.so" "libbinder-v32.so" "${2}"
@@ -105,10 +107,6 @@ function blob_fixup() {
             ;;
         vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so)
             "$PATCHELF" --replace-needed "libhidlbase.so" "libhidlbase_shim.so" "$2"
-            ;;
-        vendor/bin/hw/android.hardware.thermal@2.0-service.mtk|\
-        vendor/lib*/hw/android.hardware.thermal@2.0-impl.so)
-            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
     esac
 }
