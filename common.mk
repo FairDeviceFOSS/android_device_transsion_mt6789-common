@@ -230,6 +230,9 @@ PRODUCT_PACKAGES += \
     libcodec2_soft_common.vendor \
     libflatbuffers-cpp.vendor
 
+PRODUCT_PACKAGES += \
+    android.hardware.cas@1.2-service-lazy
+    
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video_le.xml
