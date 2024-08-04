@@ -650,6 +650,24 @@ vendor/lib64/libforkexecwrap.so
 vendor/lib64/libifcutils_mtk.so
 vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
 
+# TNE
+vendor/bin/hw/vendor.tne@1.0-service
+vendor/etc/init/tnev.rc
+-vendor/etc/vintf/manifest/manifest_tneengine.xml
+vendor/lib64/libtneclient.so
+vendor/lib64/libtnev.so
+vendor/lib64/vendor.transsion.hardware.tne.tneengine@1.0.so
+
+# Tranlog
+vendor/bin/tranlog
+vendor/bin/tranlogconfig
+vendor/etc/init/init.tranlog.rc
+vendor/etc/init/init.tranlogconfig.rc
+vendor/lib64/libminizip.so
+vendor/lib64/libtranlog.so
+vendor/lib64/vendor.transsion.hardware.tranlog@1.0.so
+vendor/lib64/vendor.transsion.hardware.tranlogconfig@1.0.so
+
 # USB
 vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2
 vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc
