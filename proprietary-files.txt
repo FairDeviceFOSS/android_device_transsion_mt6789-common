@@ -23,14 +23,22 @@ vendor/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek
 vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc
+vendor/bin/autobt
+vendor/bin/bt_dump
 vendor/etc/init/init.bt_drv.rc
 vendor/lib/hw/android.hardware.bluetooth@1.1-impl-mediatek.so
+vendor/lib/libbluetooth_hw_test.so
 vendor/lib/libbluetooth_mtk.so
 vendor/lib/libbluetooth_mtk_pure.so
+vendor/lib/libbluetooth_relayer.so
+vendor/lib/libbluetoothem_mtk.so
 vendor/lib/libbt-vendor.so
 vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-mediatek.so
+vendor/lib64/libbluetooth_hw_test.so
 vendor/lib64/libbluetooth_mtk.so
 vendor/lib64/libbluetooth_mtk_pure.so
+vendor/lib64/libbluetooth_relayer.so
+vendor/lib64/libbluetoothem_mtk.so
 vendor/lib64/libbt-vendor.so
 
 # Bluetooth (A2DP)
@@ -285,6 +293,7 @@ vendor/etc/init/android.hardware.security.keymint-service.trustonic.rc
 -vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.trustonic.xml
 
 # Media
+vendor/bin/vpud
 vendor/bin/mt6789/v3avpud.mt6789
 vendor/etc/init/v3avpud.rc
 vendor/lib/mt6789/libvcodec_utility.so
@@ -292,38 +301,35 @@ vendor/lib/mt6789/libvcodec_utility_v3a.so
 vendor/lib/mt6789/libvcodecdrv.so
 vendor/lib/mt6789/libvcodecdrv_v3a.so
 vendor/lib/mt6789/libvpudv3a_vcodec.so
-vendor/lib/libvcodec_oal.so
 vendor/lib/libvcodecdrv_header_stub.so
+vendor/lib/libvcodec_oal.so
+vendor/lib/libvcodec_utility_plat.mt6789.so
+vendor/lib/libvcodec_utility_plat.mt6895.so
+vendor/lib/libvcodec_utility_plat.mt6983.so
 vendor/lib/libvpu5.so
 vendor/lib/libvpud_vcodec.so
 vendor/lib64/libvpu.so
 
 # Media (OMX)
+vendor/etc/mtk_omx_core.cfg
 vendor/lib/libMtkOmxAdpcmDec.so
 vendor/lib/libMtkOmxAlacDec.so
+vendor/lib/libMtkOmxApeDec.so
 vendor/lib/libMtkOmxCore.so
 vendor/lib/libMtkOmxGsmDec.so
 vendor/lib/libMtkOmxMp3Dec.so
 vendor/lib/libadpcmdec_mtk.so
 vendor/lib/libmp3dec_mtk.so
 vendor/lib/libstagefrighthw.so
+vendor/lib64/libMtkOmxCore.so
 vendor/lib64/libstagefrighthw.so
 
 # Media (C2)
 vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b;NOCHECK
+vendor/etc/VideoLog_dynamic.xml
 vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc
+vendor/etc/mtk_platform_codecs_config.xml
 vendor/etc/vintf/manifest/manifest_media_c2_V1_1_default.xml
-vendor/lib/libcodec2_mtk_c2store.so
-vendor/lib/libcodec2_mtk_vdec.so
-vendor/lib/libcodec2_mtk_venc.so
-vendor/lib/libcodec2_soft_mtk_alacdec.so
-vendor/lib/libcodec2_soft_mtk_apedec.so
-vendor/lib/libcodec2_soft_mtk_imaadpcmdec.so
-vendor/lib/libcodec2_soft_mtk_mp3dec.so
-vendor/lib/libcodec2_soft_mtk_msadpcmdec.so
-vendor/lib/libcodec2_vpp_qt_plugin.so
-vendor/lib/libcodec2_vpp_rs_plugin.so
-vendor/lib/libformatter.so
 vendor/lib64/libcodec2_mtk_c2store.so
 vendor/lib64/libcodec2_mtk_vdec.so
 vendor/lib64/libcodec2_mtk_venc.so
@@ -335,6 +341,65 @@ vendor/lib64/libcodec2_soft_mtk_msadpcmdec.so
 vendor/lib64/libcodec2_vpp_qt_plugin.so
 vendor/lib64/libcodec2_vpp_rs_plugin.so
 vendor/lib64/libformatter.so
+
+# Media (Common)
+vendor/lib/AVCSecureVdecCA.so
+vendor/lib/HEVCSecureVdecCA.so
+vendor/lib/VP9SecureVdecCA.so
+vendor/lib/libAVCSecureVencCA.so
+vendor/lib/libHEVCdec_sa.ca7.android.so
+vendor/lib/libadpcmdec_mtk.so
+vendor/lib/libbwc.so
+vendor/lib/libh264dec_customize.so
+vendor/lib/libh264dec_sa.ca7.so
+vendor/lib/libh264dec_sd.ca7.so
+vendor/lib/libh264dec_se.ca7.so
+vendor/lib/libh264enc_sa.ca7.so
+vendor/lib/libhevce_sb.ca7.android.so
+vendor/lib/libmp3dec_mtk.so
+vendor/lib/libmp4enc_sa.ca7.so
+vendor/lib/libmp4enc_xa.ca7.so
+vendor/lib/libvcodec_oal.so
+vendor/lib/libvcodec_utility_plat.mt6789.so
+vendor/lib/libvcodecdrv_header_stub.so
+vendor/lib/libvp8dec_sa.ca7.so
+vendor/lib/libvp8enc_sa.ca7.so
+vendor/lib/libvp9dec_sa.ca7.so
+vendor/lib/mt6789/libmtk_drvb.so
+vendor/lib/mt6789/libvcodec_utility.so
+vendor/lib/mt6789/libvcodec_utility_v3a.so
+vendor/lib/mt6789/libvcodecdrv.so
+vendor/lib/mt6789/libvcodecdrv_v3a.so
+vendor/lib/mt6789/libvpudv3a_vcodec.so
+vendor/lib64/AVCSecureVdecCA.so
+vendor/lib64/HEVCSecureVdecCA.so
+vendor/lib64/VP9SecureVdecCA.so
+vendor/lib64/libAVCSecureVencCA.so
+vendor/lib64/libadpcmdec_mtk.so
+vendor/lib64/libbwc.so
+vendor/lib64/libmp3dec_mtk.so
+vendor/lib64/libvcodec_oal.so
+vendor/lib64/libvcodecdrv_header_stub.so
+vendor/lib64/mt6789/libmtk_drvb.so
+
+# Media (VPU)
+vendor/lib64/libmvpu_cic_ci_compiler.so
+vendor/lib64/libmvpu_clc_cl_compiler.so
+vendor/lib64/libmvpu_clc_mvpu_debuginfo.so
+vendor/lib64/libmvpu_clc_mvpu_elf.so
+vendor/lib64/libmvpu_clc_mvpu_utility.so
+vendor/lib64/libmvpu_clc_vpu_isa.so
+vendor/lib64/libmvpu_config.so
+vendor/lib64/libmvpu_engine.so
+vendor/lib64/libmvpu_engine_pub.so
+vendor/lib64/libmvpu_pattern.so
+vendor/lib64/libmvpu_pattern_pub.so
+vendor/lib64/libmvpu_runtime.so
+vendor/lib64/libmvpu_runtime_pub.so
+vendor/lib64/libmvpuop_mtk_cv.so
+vendor/lib64/libmvpuop_mtk_nn.so
+vendor/lib64/libvpu.so
+vendor/lib64/libvpu5.so
 
 # MMS
 vendor/bin/hw/vendor.mediatek.hardware.mms@1.6-service
