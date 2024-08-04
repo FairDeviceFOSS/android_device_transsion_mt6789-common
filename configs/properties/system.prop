@@ -43,6 +43,11 @@ persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
+# MTK vendor
+ro.vendor.mtk_omacp_support=1
+ro.vendor.mtk_flv_playback_support=1
+ro.vendor.mtk_telephony_add_on_policy=0
+
 # ZRAM
 ro.zram.mark_idle_delay_mins=60
 ro.zram.first_wb_delay_mins=1440
