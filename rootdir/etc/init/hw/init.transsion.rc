@@ -1,0 +1,3 @@
+on boot
+    # Touch
+    chown system system /proc/game_state
