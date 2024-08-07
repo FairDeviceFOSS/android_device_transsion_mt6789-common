@@ -308,6 +308,14 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>vendor.mediatek.hardware.tranHwInfo</name>
+        <version>1.0</version>
+        <interface>
+            <name>ITranHwInfo</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>vendor.trustonic.tee.tui</name>
         <version>1.0</version>
         <interface>

@@ -105,8 +105,6 @@ vendor/lib/libladder.so
 vendor/lib/libmml.so
 vendor/lib/libpqframework.so
 vendor/lib/libudf.so
-vendor/lib/vendor.mediatek.hardware.mmagent@1.0.so
-vendor/lib/vendor.mediatek.hardware.mmagent@1.1.so
 vendor/lib/vendor.mediatek.hardware.pq@2.0.so
 vendor/lib/vendor.mediatek.hardware.pq@2.1.so
 vendor/lib/vendor.mediatek.hardware.pq@2.10.so
@@ -166,8 +164,6 @@ vendor/lib64/libmml.so
 vendor/lib64/libpqframework.so
 vendor/lib64/libudf.so
 vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
-vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
-vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.0.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.1.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.10.so
@@ -400,6 +396,33 @@ vendor/lib64/libmvpuop_mtk_cv.so
 vendor/lib64/libmvpuop_mtk_nn.so
 vendor/lib64/libvpu.so
 vendor/lib64/libvpu5.so
+
+# Misc
+vendor/bin/hw/vendor.mediatek.hardware.tranHwInfo@1.0-service
+vendor/bin/fpsgo
+vendor/bin/gbe
+vendor/bin/md_monitor
+vendor/bin/meta_tst
+vendor/bin/mt6660_calibration
+vendor/bin/rt5512_calibration
+vendor/etc/init/fpsgo.rc
+vendor/etc/init/gbe.rc
+vendor/etc/init/init.otg.rc
+vendor/etc/init/md_monitor.rc
+vendor/etc/init/vendor.mediatek.hardware.tranHwInfo@1.0-service.rc
+vendor/etc/vintf/manifest/vendor.mediatek.hardware.tranHwInfo@1.0.xml
+vendor/lib/libimsg_log.so
+vendor/lib64/libimsg_log.so
+vendor/lib64/vendor.mediatek.hardware.tranHwInfo@1.0.so
+
+# MMAGENT
+vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
+vendor/etc/init/vendor.mediatek.hardware.mmagent@1.1-service.rc
+vendor/lib/vendor.mediatek.hardware.mmagent@1.0.so
+vendor/lib/vendor.mediatek.hardware.mmagent@1.1.so
+vendor/lib64/libmmagent.so
+vendor/lib64/vendor.mediatek.hardware.mmagent@1.0.so
+vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
 
 # MMS
 vendor/bin/hw/vendor.mediatek.hardware.mms@1.6-service
