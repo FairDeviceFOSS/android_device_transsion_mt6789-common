@@ -18,8 +18,32 @@ bluetooth.profile.sap.server.enabled=true
 ro.charger.enable_suspend=true
 ro.vendor.mtk_fast_charging_support=1
 
-# Dalvik
+# Dex / Dalvik
+persist.device_config.runtime_native.usap_pool_enabled=false
+persist.sys.minfree_6g=73728,92160,110592,340000,1282868,1677312
+persist.sys.minfree_8g=73728,92160,110592,340000,1677312,2064384
+persist.sys.minfree_def=73728,92160,110592,340000,510000,645120
+pm.dexopt.install=speed-profile
+pm.dexopt.bg-dexopt=speed-profile
+pm.dexopt.boot=verify
+pm.dexopt.first-boot=verify
+pm.dexopt.ab-ota=speed-profile
 dalvik.vm.dex2oat64.enabled=true
+dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5
+dalvik.vm.dex2oat-threads=6
+dalvik.vm.boot-dex2oat-cpu-set=0,1,2,3,4,5
+dalvik.vm.boot-dex2oat-threads=6
+dalvik.vm.image-dex2oat-cpu-set=0,1,2,3,4,5
+dalvik.vm.image-dex2oat-threads=6
+
+# Display / Fingerprint
+ro.hardware.fp.sideCap=true
+
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
+
+# Feature flags
+persist.sys.fflag.override.settings_enable_monitor_phantom_procs=false
 
 # Graphics
 debug.hwui.skia_atrace_enabled=false
@@ -28,10 +52,39 @@ debug.sf.latch_unsignaled=true
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.use_phase_offsets_as_durations=1
 
+# Iorapd
+ro.iorapd.enable=false
+iorapd.perfetto.enable=false
+iorapd.readahead.enable=false
+persist.device_config.runtime_native_boot.iorap_readahead_enable=false
+
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
+
+# IPO
+sys.ipo.pwrdncap=2
+sys.ipo.disable=1
+
+# Memory
+ro.config.per_app_memcg=false
+
+# Performance
+ro.mtk_perf_simple_start_win=1
+ro.mtk_perf_fast_start_win=1
+ro.mtk_perf_response_time=1
+
+# RIL Powersaving
+persist.radio.add_power_save=1
+pm.sleep_mode=1
+ro.ril.disable.power.collapse=0
+ro.ril.fast.dormancy.rule=1
+ro.ril.fast.dormancy.timeout=3
+ro.mot.eri.losalert.delay=100
+ro.vendor.use_data_netmgrd=true
+ro.vold.umsdirtyratio=20
+power.saving.mode=1
 
 # ZRAM
 ro.zram.mark_idle_delay_mins=60
