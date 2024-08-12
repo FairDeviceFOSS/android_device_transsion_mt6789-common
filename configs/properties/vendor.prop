@@ -145,6 +145,13 @@ ro.vendor.mtk_nn_support=1
 ro.netflix.bsp_rev=MTK6789-35965-1
 
 # Power
+persist.vendor.iomanager.dirty=1
+persist.vendor.iomanager.switch=1
+persist.vendor.pnpmgr.enable=1
+persist.vendor.pnpmgr.gamemode.enable=1
+persist.vendor.pnpmgr.gamerecord.enable=1
+ro.vendor.transched.support=1
+ro.vendor.powerhal.gsi_watermark=500
 ro.vendor.powerhal_fling_mode_support=1
 
 # PQ
