@@ -12,6 +12,12 @@ aaudio.mmap_policy=2
 persist.vendor.rm.debug.headsetmic=1
 persist.vendor.rm.debug.phonemic=1
 
+# Boostfwk
+vendor.boostfwk.aosp_fling=1
+vendor.boostfwk.aosp_move=1
+vendor.boostfwk.fling_distance_dp=20
+vendor.boostfwk.launcher_use_interaction=1
+
 # Bluetooth
 persist.bluetooth.a2dp_offload.cap=sbc-aac
 persist.bluetooth.a2dp_offload.disabled=true
