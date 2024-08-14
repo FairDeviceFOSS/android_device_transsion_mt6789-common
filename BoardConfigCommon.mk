@@ -99,7 +99,7 @@ BOARD_HAS_MTK_HARDWARE := true
 BOARD_HAVE_MTK_FM := true
 
 # Power
-TARGET_TAP_TO_WAKE_NODE := /proc/gesture_function
+TARGET_TAP_TO_WAKE_NODE := "/proc/gesture_function"
 TARGET_POWER_LIBPERFMGR_MODE_EXTENSION_LIB := //$(COMMON_PATH):libperfmgr-ext-transsion
 
 # Properties
