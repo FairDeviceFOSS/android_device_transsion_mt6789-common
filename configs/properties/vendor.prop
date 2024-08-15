@@ -42,7 +42,6 @@ debug.sf.disable_client_composition_cache=1
 debug.sf.enable_transaction_tracing=false
 debug.mediatek.appgamepq_compress=1
 debug.renderengine.backend=skiagl
-debug.sf.auto_latch_unsignaled=0
 debug.sf.disable_backpressure=1
 debug.sf.late.sf.duration=29100000
 debug.sf.late.app.duration=21500000
@@ -121,19 +120,15 @@ ro.hardware.kmsetkey=trustonic
 ro.logd.kernel=false
 
 # Media
+ro.vendor.mtk.c2.vdec.fmt.support.level=1
 debug.mediatek.disp_decompress=1
 debug.stagefright.c2inputsurface=-1
-debug.stagefright.ccodec=1
 media.c2.dmabuf.padding=3072
-media.stagefright.thumbnail.prefer_hw_codecs=true
-ro.vendor.jpeg_decode_sw_opt=1
-ro.vendor.mtk.c2.vdec.fmt.support.level=1
-ro.vendor.mtk_config_max_dram_size=0x800000000
+ro.vendor.iomanager.support=1
+ro.vendor.jpeg_decode_sw_opt=2
 ro.vendor.mtk_sec_video_path_support=1
 ro.vendor.mtk_video_hevc_enc_support=1
-vendor.media.heif.feature.off=1
-vendor.media.heif.highThreshold=20
-vendor.mtk.vdec.waitkeyframeforplay=7
+vendor.mtk.vdec.waitkeyframeforplay=9
 
 # MediaTek
 ro.soc.manufacturer=Mediatek
