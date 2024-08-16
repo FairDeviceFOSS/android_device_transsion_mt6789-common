@@ -149,6 +149,14 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>vendor.mediatek.hardware.biometrics.fingerprint</name>
+        <version>2.1</version>
+        <interface>
+            <name>ITranBiometricsFingerprint</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>vendor.mediatek.hardware.keymaster_attestation</name>
         <version>1.0-1</version>
         <interface>
