@@ -109,6 +109,8 @@ function blob_fixup() {
         system_ext/lib64/libsink.so)
             grep -q libshim_sink.so "$2" || "${PATCHELF}" --add-needed libshim_sink.so "${2}"
             ;;
+        vendor/bin/hw/vendor.silead.hardware.fingerprintext@1.0-service|\
+        vendor/lib64/vendor.silead.hardware.fingerprintext@1.0.so|\
         vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so)
             "$PATCHELF" --replace-needed "libhidlbase.so" "libhidlbase_shim.so" "$2"
             ;;
