@@ -191,7 +191,7 @@ vendor/lib64/libtlcWidevineModularDrm.so
 vendor/lib64/liburee_meta_drmkeyinstall.so
 -vendor/lib64/libwvhidl.so;REPLACEDEP=libprotobuf-cpp-full-3.9.1:libprotobuf-cpp-full-3.9.1-vendorcompat
      
-# EngineerMode - from X6853-H895QSUV-U-BASE-240624V2689
+# EngineerMode - from TECNO-U-64-ARMV82-230626V601DevT
 -system_ext/lib/libem_support_jni.so|afab3ca5e5bdf8619e66606652a39fac5692d99b
 -system_ext/lib64/libem_support_jni.so|21dddde25b7134b186e68052910adf2b4dba8b86
 system_ext/app/EngineerMode/EngineerMode.apk|8f64579fe7db633fef0668bd24937d1f32fc433b
@@ -318,8 +318,6 @@ vendor/lib/mt6789/libvpudv3a_vcodec.so
 vendor/lib/libvcodecdrv_header_stub.so
 vendor/lib/libvcodec_oal.so
 vendor/lib/libvcodec_utility_plat.mt6789.so
-vendor/lib/libvcodec_utility_plat.mt6895.so
-vendor/lib/libvcodec_utility_plat.mt6983.so
 vendor/lib/libvpu5.so
 vendor/lib/libvpud_vcodec.so
 vendor/lib64/libvpu.so
