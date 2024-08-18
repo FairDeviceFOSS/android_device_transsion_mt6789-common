@@ -125,6 +125,16 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
+        <name>vendor.mediatek.hardware.camera.postproc</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IPostDevice</name>
+            <instance>internal/0</instance>
+        </interface>
+        <fqname>@1.0::IPostDevice/internal/0</fqname>
+    </hal>
+    <hal format="hidl" optional="true">
         <name>vendor.mediatek.hardware.composer_ext</name>
         <version>1.0</version>
         <interface>
