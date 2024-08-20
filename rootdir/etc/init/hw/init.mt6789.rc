@@ -7,7 +7,6 @@ import /vendor/etc/init/hw/init.aee.rc
 import /vendor/etc/init/hw/init.sensor_2_0.rc
 import /vendor/etc/init/hw/init.cgroup.rc
 import /vendor/etc/init/hw/init.transsion.rc
-import /vendor/etc/init/hw/init.safailnet.rc
 
 # init.modem.rc must be the LAST rc file because vold.post_fs_data_done is set in it
 import /vendor/etc/init/hw/init.modem.rc
