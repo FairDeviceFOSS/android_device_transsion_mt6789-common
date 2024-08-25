@@ -51,7 +51,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/userspace_reboot.mk)
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio.sounddose-vendor-impl \
     android.hardware.audio@7.0-impl \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.audio.service \
