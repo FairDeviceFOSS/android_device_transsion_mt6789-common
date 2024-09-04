@@ -6,7 +6,6 @@ import /vendor/etc/init/hw/init.project.rc
 import /vendor/etc/init/hw/init.aee.rc
 import /vendor/etc/init/hw/init.sensor_2_0.rc
 import /vendor/etc/init/hw/init.cgroup.rc
-import /vendor/etc/init/hw/init.transsion.rc
 
 # init.modem.rc must be the LAST rc file because vold.post_fs_data_done is set in it
 import /vendor/etc/init/hw/init.modem.rc
@@ -1122,7 +1121,3 @@ on property:sys.boot_completed=1
 # OTG
 on property:sys.boot_completed=1
     write /sys/devices/platform/odm/odm:tran_battery/OTG_CTL 1
-
-# Enable suspend to RAM
-on property:sys.boot_completed=1
-    write /sys/power/mem_sleep "deep"

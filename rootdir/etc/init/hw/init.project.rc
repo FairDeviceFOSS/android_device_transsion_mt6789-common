@@ -102,10 +102,3 @@ on property:sys.boot_completed=1
     write /sys/kernel/tracing/instances/mmstat/events/mmstat/enable 1
     write /sys/kernel/tracing/instances/mmstat/tracing_on 1
 
-#SPD: modify for swap zram write-back by shuang.zhou at 20201020 start
-on boot
-    swapon_all /vendor/etc/memfusion2/fstab.enableswap
-
-on property:sys.boot_completed=1
-    write /sys/module/memfusion/parameters/force_udelay 5000
-#SPD: modify for swap zram write-back by shuang.zhou at 20201020 end
