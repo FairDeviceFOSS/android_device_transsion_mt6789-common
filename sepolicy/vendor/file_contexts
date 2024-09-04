@@ -22,6 +22,9 @@
 # Health
 /(vendor|system\/vendor)/bin/hw/android\.hardware\.health@2\.1-service         u:object_r:hal_health_default_exec:s0
 
+# Lights
+/(vendor|system/vendor)/bin/hw/android\.hardware\.lights-service\.transsion             u:object_r:hal_light_default_exec:s0
+
 # NFC
 /dev/pn54x                                                                                  u:object_r:nfc_device:s0
 /dev/pn553                                                                                  u:object_r:nfc_device:s0
@@ -37,10 +40,14 @@
 /(system\/vendor|vendor)/bin/hw/vendor\.transsion\.hardware\.trancam\.trancamserver@1\.0-service     u:object_r:trancamserver_exec:s0
 /sys/devices/platform/(odm/odm:tran_battery|tran_battery)/tran_cam                              u:object_r:sysfs_tran_cam_file:s0
 
+# Touch
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.touch@1\.0-service\.transsion           u:object_r:hal_lineage_touch_default_exec:s0
+
 # Tranfs
 /dev/block/sdc62                                                                        u:object_r:tranfs_block_device:s0
 
 # Vibrator
+/(vendor|system/vendor)/bin/hw/android\.hardware\.vibrator-service\.transsion           u:object_r:hal_vibrator_default_exec:s0
 /(vendor|system\/vendor)/bin/hw/android\.hardware\.vibrator@1\.0-service              u:object_r:hal_vibrator_default_exec:s0
 /(vendor|system\/vendor)/bin/hw/android\.hardware\.vibrator-service.example           u:object_r:hal_vibrator_default_exec:s0
 /(vendor|system\/vendor)/bin/hw/android\.hardware\.vibrator@1\.0-service-mediatek            u:object_r:hal_vibrator_default_exec:s0
