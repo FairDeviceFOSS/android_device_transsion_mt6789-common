@@ -40,6 +40,8 @@ vendor.connsys.driver.ready=no
 ro.vendor.builtin_fm_antenna_support=1
 
 # DRM
+drm.service.enabled=true
+ro.vendor.mtk_widevine_drm_l1_support=1
 ro.vendor.mtk_tee_gp_support=1
 
 # Graphics
