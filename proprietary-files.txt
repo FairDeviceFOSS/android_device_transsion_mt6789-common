@@ -51,10 +51,6 @@ vendor/lib64/libbluetooth_audio_session_mediatek.so
 vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so
 vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.2.so
 
-# Charger
-system_ext/bin/kpoc_charger:bin/kpoc_charger
-system_ext/etc/init/kpoc_charger.rc:etc/init/kpoc_charger.rc
-
 # Connectivity
 vendor/bin/wmt_launcher
 vendor/bin/wmt_loader
