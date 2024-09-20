@@ -64,7 +64,6 @@ function blob_fixup() {
         vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so)
             "${PATCHELF}" --replace-needed "android.hardware.gnss-V1-ndk_platform.so" "android.hardware.gnss-V1-ndk.so" "${2}"
             ;;
-        vendor/lib*/hw/audio.primary.mediatek.so|\
         vendor/bin/hw/mt6789/camerahalserver|\
         vendor/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so|\
         vendor/lib*/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so|\
@@ -95,6 +94,9 @@ function blob_fixup() {
         vendor/lib64/mt6789/libaalservice.so|\
         vendor/lib64/mt6789/libcam.utils.sensorprovider.so)
             "${PATCHELF}" --add-needed "libshim_sensors.so" "${2}"
+            ;;
+        vendor/lib*/hw/audio.primary.mediatek.so)
+            "${PATCHELF}" --replace-needed "libalsautils.so" "libalsautils-v32.so" "${2}"
             ;;
         vendor/bin/hw/android.hardware.security.keymint-service.trustonic)
             "${PATCHELF}" --replace-needed "android.hardware.security.keymint-V1-ndk_platform.so" "android.hardware.security.keymint-V1-ndk.so" "${2}"
