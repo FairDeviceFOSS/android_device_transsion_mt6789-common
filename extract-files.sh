@@ -125,6 +125,7 @@ function blob_fixup() {
             sed -i 's/start/enable/' "$2"
             ;;
         vendor/lib*/libspeech_enh_lib.so|\
+        vendor/lib*/libalsautils-v32.so|\
         vendor/lib64/libwifi-hal-mtk.so|\
         vendor/lib*/hw/sound_trigger.primary.mt6789.so|\
         vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so)
